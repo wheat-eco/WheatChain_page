@@ -2,7 +2,8 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import Image from "next/image"
+import { Menu, X, Twitter, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
@@ -20,7 +21,7 @@ export function Navigation() {
     <header className="fixed top-0 z-50 w-full border-b border-border/40 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
       <nav className="container flex h-14 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="WheatChain Logo" className="h-8 w-8" />
+          <Image src="/logo.png" alt="WheatChain Logo" width={32} height={32} />
           <span className="text-xl font-bold">WHEATCHAIN</span>
         </Link>
         <div className="hidden md:flex md:items-center md:space-x-6">
@@ -33,6 +34,22 @@ export function Navigation() {
               {route.label}
             </Link>
           ))}
+          <Link
+            href="https://twitter.com/wheat_linea"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-primary"
+          >
+            <Twitter className="h-5 w-5" />
+          </Link>
+          <Link
+            href="https://t.me/swhit_tg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-primary"
+          >
+            <Send className="h-5 w-5" />
+          </Link>
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -43,6 +60,10 @@ export function Navigation() {
           </SheetTrigger>
           <SheetContent side="right" className="bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
             <div className="flex flex-col space-y-6 pt-6">
+              <div className="flex items-center space-x-2 mb-6">
+                <Image src="/logo.png" alt="WheatChain Logo" width={32} height={32} />
+                <span className="text-xl font-bold">WHEATCHAIN</span>
+              </div>
               {routes.map((route) => (
                 <Link
                   key={route.href}
@@ -53,6 +74,24 @@ export function Navigation() {
                   {route.label}
                 </Link>
               ))}
+              <div className="flex space-x-4 mt-4">
+                <Link
+                  href="https://twitter.com/wheat_linea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-primary"
+                >
+                  <Twitter className="h-5 w-5" />
+                </Link>
+                <Link
+                  href="https://t.me/swhit_tg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-primary"
+                >
+                  <Send className="h-5 w-5" />
+                </Link>
+              </div>
             </div>
           </SheetContent>
         </Sheet>

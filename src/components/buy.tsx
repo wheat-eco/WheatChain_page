@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export function Buy() {
   return (
@@ -11,7 +12,9 @@ export function Buy() {
             Join us in revolutionizing long-term value storage. SWHIT token is available on multiple decentralized
             exchanges.
           </p>
-          <img src="/buy.png" alt="Buy SWHIT" className="mb-8 rounded-lg shadow-lg" />
+          <div className="relative w-full aspect-[16/9] mb-8">
+            <Image src="/buy-image.jpg" alt="Buy SWHIT" fill className="object-cover rounded-lg shadow-lg" />
+          </div>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link href="https://app.uniswap.org" target="_blank" rel="noopener noreferrer">

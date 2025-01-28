@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function About() {
   return (
     <section id="about" className="relative min-h-screen bg-black py-24">
@@ -9,7 +11,9 @@ export function About() {
               In the dark times, when people were just beginning to learn about the art of virtual gold, there lived a
               hero named WheatChain.
             </p>
-            <img src="/about.png" alt="About WheatChain" className="my-8 rounded-lg shadow-lg" />
+            <div className="relative w-full aspect-[16/9] my-8">
+              <Image src="/about-image.jpg" alt="About WheatChain" fill className="object-cover rounded-lg shadow-lg" />
+            </div>
             <p>
               WheatChain (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of
               long-term value storage in the digital age. Inspired by the timeless practice of storing wheat for future
