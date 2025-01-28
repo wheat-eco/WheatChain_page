@@ -20,6 +20,7 @@ export function Navigation() {
     <header className="fixed top-0 z-50 w-full border-b border-border/40 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
       <nav className="container flex h-14 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
+          <img src="/logo.png" alt="WheatChain Logo" className="h-8 w-8" />
           <span className="text-xl font-bold">WHEATCHAIN</span>
         </Link>
         <div className="hidden md:flex md:items-center md:space-x-6">

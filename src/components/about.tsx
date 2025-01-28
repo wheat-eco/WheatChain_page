@@ -9,6 +9,7 @@ export function About() {
               In the dark times, when people were just beginning to learn about the art of virtual gold, there lived a
               hero named WheatChain.
             </p>
+            <img src="/about.png" alt="About WheatChain" className="my-8 rounded-lg shadow-lg" />
             <p>
               WheatChain (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of
               long-term value storage in the digital age. Inspired by the timeless practice of storing wheat for future

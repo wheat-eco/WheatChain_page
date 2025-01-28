@@ -11,6 +11,7 @@ export function Buy() {
             Join us in revolutionizing long-term value storage. SWHIT token is available on multiple decentralized
             exchanges.
           </p>
+          <img src="/buy.png" alt="Buy SWHIT" className="mb-8 rounded-lg shadow-lg" />
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link href="https://app.uniswap.org" target="_blank" rel="noopener noreferrer">
