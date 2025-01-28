@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function About() {
   return (
-    <section id="about" className="relative min-h-screen bg-black py-24">
+    <section id="about" className="relative bg-black py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About</h2>
@@ -12,7 +12,7 @@ export function About() {
               hero named WheatChain.
             </p>
             <div className="relative w-full aspect-[16/9] my-8">
-              <Image src="/about.png" alt="About WheatChain" fill className="object-cover rounded-lg shadow-lg" />
+              <Image src="/abou.png" alt="About WheatChain" fill className="object-cover rounded-lg shadow-lg" />
             </div>
             <p>
               WheatChain (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function Contracts() {
   return (
-    <section id="contracts" className="relative min-h-screen bg-black py-24">
+    <section id="contracts" className="relative bg-black py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contracts</h2>

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Buy() {
   return (
-    <section id="buy" className="relative min-h-screen bg-black py-24">
+    <section id="buy" className="relative bg-black py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Trade SWHIT</h2>
@@ -23,7 +23,7 @@ export function Buy() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <Image src="/Cetus_logo.png" alt="Cetus" width={24} height={24} />
+                <Image src="/Cetus-logo.png" alt="Cetus" width={24} height={24} />
                 Trade On Cetus
               </Link>
             </Button>

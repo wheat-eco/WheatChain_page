@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center bg-black">
+    <section className="relative flex h-screen items-center justify-center bg-black">
       <div className="container flex flex-col items-center justify-center space-y-8 text-center">
         <div className="space-y-4">
           <h1 className="font-titillium font-black text-4xl tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
