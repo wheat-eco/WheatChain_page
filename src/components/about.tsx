@@ -12,7 +12,7 @@ export function About() {
               hero named WheatChain.
             </p>
             <div className="relative w-full aspect-[16/9] my-8">
-              <Image src="/abou.png" alt="About WheatChain" fill className="object-cover rounded-lg shadow-lg" />
+              <Image src="/about.png" alt="About WheatChain" fill className="object-cover rounded-lg shadow-lg" />
             </div>
             <p>
               WheatChain (SWHIT) is a revolutionary blockchain-based platform designed to redefine the concept of

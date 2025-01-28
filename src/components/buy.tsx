@@ -23,7 +23,7 @@ export function Buy() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <Image src="/Cetus-logo.png" alt="Cetus" width={24} height={24} />
+                <Image src="/Cetus_logo.png" alt="Cetus" width={24} height={24} />
                 Trade On Cetus
               </Link>
             </Button>
