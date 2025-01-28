@@ -8,7 +8,7 @@ export function Footer() {
         <p className="text-sm text-gray-400">© 2024 WheatChain. All rights reserved.</p>
         <div className="flex items-center space-x-4">
           <Link
-            href="https://twitter.com/wheat_linea"
+            href="https://x.com/wheatchain_xyz"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-primary"

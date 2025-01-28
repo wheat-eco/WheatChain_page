@@ -16,7 +16,7 @@ export function Hero() {
           />
         </div>
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">WHEATCHAIN</h1>
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">WheatChain</h1>
           <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">Sowing the Seeds of Digital Prosperity</p>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row">

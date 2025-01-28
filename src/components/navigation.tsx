@@ -22,7 +22,7 @@ export function Navigation() {
       <nav className="container flex h-14 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/logo.png" alt="WheatChain Logo" width={32} height={32} />
-          <span className="text-xl font-bold">WHEATCHAIN</span>
+          <span className="text-xl font-bold">WheatChain</span>
         </Link>
         <div className="hidden md:flex md:items-center md:space-x-6">
           {routes.map((route) => (
@@ -35,7 +35,7 @@ export function Navigation() {
             </Link>
           ))}
           <Link
-            href="https://twitter.com/wheat_linea"
+            href="https://x.com/wheatchain_xyz"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-primary"
@@ -62,7 +62,7 @@ export function Navigation() {
             <div className="flex flex-col space-y-6 pt-6">
               <div className="flex items-center space-x-2 mb-6">
                 <Image src="/logo.png" alt="WheatChain Logo" width={32} height={32} />
-                <span className="text-xl font-bold">WHEATCHAIN</span>
+                <span className="text-xl font-bold">WheatChain</span>
               </div>
               {routes.map((route) => (
                 <Link
@@ -76,7 +76,7 @@ export function Navigation() {
               ))}
               <div className="flex space-x-4 mt-4">
                 <Link
-                  href="https://twitter.com/wheat_linea"
+                  href="https://x.com/wheatchain_xyz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-primary"

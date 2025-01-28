@@ -18,12 +18,12 @@ export function Buy() {
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link href="https://app.uniswap.org" target="_blank" rel="noopener noreferrer">
-                Buy on Uniswap
+                Trade On Cetus
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="https://pancakeswap.finance" target="_blank" rel="noopener noreferrer">
-                Buy on PancakeSwap
+                Trade On RaidenX 
               </Link>
             </Button>
           </div>
