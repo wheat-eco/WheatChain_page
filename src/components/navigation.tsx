@@ -5,13 +5,13 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X, Twitter, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 
 const routes = [
   { href: "/", label: "HOME" },
   { href: "#about", label: "ABOUT" },
-  { href: "#buy", label: "BUY" },
-  { href: "#chart", label: "CHART" },
+  { href: "#buy", label: "TRADE" },
+  { href: "#contracts", label: "CONTRACTS" },
 ]
 
 export function Navigation() {
@@ -59,6 +59,7 @@ export function Navigation() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
+            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <div className="flex flex-col space-y-6 pt-6">
               <div className="flex items-center space-x-2 mb-6">
                 <Image src="/logo.png" alt="WheatChain Logo" width={32} height={32} />

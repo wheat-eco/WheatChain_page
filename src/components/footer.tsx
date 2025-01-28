@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Twitter, Send } from "lucide-react"
+import { Twitter, Send, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -22,6 +22,9 @@ export function Footer() {
             className="text-gray-400 hover:text-primary"
           >
             <Send className="h-5 w-5" />
+          </Link>
+          <Link href="mailto:info@wheatchain.xyz" className="text-gray-400 hover:text-primary">
+            <Mail className="h-5 w-5" />
           </Link>
         </div>
       </div>
