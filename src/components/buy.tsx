@@ -13,7 +13,7 @@ export function Buy() {
             exchanges.
           </p>
           <div className="relative w-full aspect-[16/9] mb-8">
-            <Image src="/buy-image.jpg" alt="Buy SWHIT" fill className="object-cover rounded-lg shadow-lg" />
+            <Image src="/buy.png" alt="Buy SWHIT" fill className="object-cover rounded-lg shadow-lg" />
           </div>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">

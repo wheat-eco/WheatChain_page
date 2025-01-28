@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container flex flex-col items-center justify-center space-y-8 text-center">
         <div className="relative w-full max-w-2xl aspect-[16/9] mb-8">
           <Image
-            src="/hero-image.jpg"
+            src="/hero.png"
             alt="WheatChain Hero"
             fill
             className="object-cover rounded-lg shadow-lg"
