@@ -1,9 +1,14 @@
 import "@/styles/globals.css"
-import { Inter } from "next/font/google"
+import { Titillium_Web } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
 
-const inter = Inter({ subsets: ["latin"] })
+const titilliumWeb = Titillium_Web({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-titillium-web",
+})
 
 export default function RootLayout({
   children,
@@ -12,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-black text-white antialiased`}>
+      <body className={`${titilliumWeb.variable} font-titillium bg-black text-white antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <Navigation />
           <main>{children}</main>
