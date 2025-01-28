@@ -1,7 +1,12 @@
 import "@/styles/globals.css"
-import { Titillium_Web } from "next/font/google"
+import { Space_Grotesk, Titillium_Web } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+})
 
 const titilliumWeb = Titillium_Web({
   subsets: ["latin"],
@@ -17,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${titilliumWeb.variable} font-titillium bg-black text-white antialiased`}>
+      <body
+        className={`${spaceGrotesk.variable} ${titilliumWeb.variable} font-space-grotesk bg-black text-white antialiased`}
+      >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <Navigation />
           <main>{children}</main>

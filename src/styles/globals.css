@@ -54,37 +54,56 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-space-grotesk;
   }
 }
 
+/* Font utility classes */
 @layer utilities {
-  .font-extralight {
-    font-weight: 200;
-  }
-
+  /* Space Grotesk weights */
   .font-light {
     font-weight: 300;
   }
-
-  .font-regular {
+  .font-normal {
     font-weight: 400;
   }
-
+  .font-medium {
+    font-weight: 500;
+  }
   .font-semibold {
     font-weight: 600;
   }
-
   .font-bold {
     font-weight: 700;
   }
 
-  .font-black {
-    font-weight: 900;
+  /* Titillium Web weights */
+  .font-titillium {
+    font-family: var(--font-titillium-web);
   }
-
-  .italic {
-    font-style: italic;
+  .font-titillium-extralight {
+    font-family: var(--font-titillium-web);
+    font-weight: 200;
+  }
+  .font-titillium-light {
+    font-family: var(--font-titillium-web);
+    font-weight: 300;
+  }
+  .font-titillium-regular {
+    font-family: var(--font-titillium-web);
+    font-weight: 400;
+  }
+  .font-titillium-semibold {
+    font-family: var(--font-titillium-web);
+    font-weight: 600;
+  }
+  .font-titillium-bold {
+    font-family: var(--font-titillium-web);
+    font-weight: 700;
+  }
+  .font-titillium-black {
+    font-family: var(--font-titillium-web);
+    font-weight: 900;
   }
 }
 

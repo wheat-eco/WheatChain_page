@@ -12,7 +12,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        titillium: ["var(--font-titillium-web)"],
+        "space-grotesk": ["var(--font-space-grotesk)", "sans-serif"],
+        titillium: ["var(--font-titillium-web)", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -58,4 +59,3 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 }
-
