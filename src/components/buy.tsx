@@ -1,18 +1,19 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export function Buy() {
   return (
     <section id="buy" className="relative bg-black py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Trade SWHIT</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Get SWHIT on DEXs
+          </h2>
           <p className="text-gray-400">
-            Join us in revolutionizing long-term value storage. SWHIT token is available on multiple decentralized
-            exchanges.
+            SWHIT is available on decentralized exchanges for easy swapping. Securely trade SWHIT and be part of the future of value storage.
           </p>
-          {/* Trade Image */}
+          {/* Trade Image - Optional */}
           <div className="relative w-full max-w-[600px] mx-auto aspect-[16/9] mb-8">
             <Image src="/trade-image.png" alt="Trade SWHIT" fill className="object-contain rounded-lg" />
           </div>
@@ -25,7 +26,7 @@ export function Buy() {
                 className="flex items-center gap-2"
               >
                 <Image src="/Cetus_logo.png" alt="Cetus" width={24} height={24} />
-                Trade On Cetus
+                Trade on Cetus
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
@@ -36,13 +37,12 @@ export function Buy() {
                 className="flex items-center gap-2"
               >
                 <Image src="/raidenx.png" alt="RaidenX" width={24} height={24} />
-                Trade On RaidenX
+                Trade on RaidenX
               </Link>
             </Button>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
