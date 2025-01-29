@@ -28,7 +28,7 @@ export function Contracts() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <Image src="" alt="" width={24} height={24} />
+
                 View on Suivision
               </Link>
             </Button>
