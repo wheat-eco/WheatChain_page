@@ -1,14 +1,18 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export function Contracts() {
   return (
     <section id="contracts" className="relative bg-black py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contracts</h2>
-          <p className="text-gray-400">View our smart contracts on blockchain explorers.</p>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Track SWHIT on the Blockchain
+          </h2>
+          <p className="text-gray-400">
+            View real-time data, transactions, and holdings of SWHIT on blockchain explorers.
+          </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link
@@ -28,7 +32,6 @@ export function Contracts() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-
                 View on Suivision
               </Link>
             </Button>
@@ -36,6 +39,5 @@ export function Contracts() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
