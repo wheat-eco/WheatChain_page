@@ -18,7 +18,8 @@ export function Hero() {
             Building The Future Of Decentralized Finance.
           </p>
         </div>
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
+        {/* Buttons on the same line always */}
+        <div className="flex flex-wrap items-center justify-center gap-6">
           <Button asChild size="lg" className="font-medium text-base px-8 py-6">
             <Link href="#buy">Trade Now</Link>
           </Button>
@@ -30,4 +31,3 @@ export function Hero() {
     </section>
   )
 }
-
