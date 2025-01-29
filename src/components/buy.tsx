@@ -12,8 +12,9 @@ export function Buy() {
             Join us in revolutionizing long-term value storage. SWHIT token is available on multiple decentralized
             exchanges.
           </p>
-          <div className="relative w-full aspect-[16/9] mb-8">
-            <Image src="/buy.png" alt="Trade SWHIT" fill className="object-cover rounded-lg shadow-lg" />
+          {/* Trade Image */}
+          <div className="relative w-full max-w-[600px] mx-auto aspect-[16/9] mb-8">
+            <Image src="/trade-image.png" alt="Trade SWHIT" fill className="object-contain rounded-lg" />
           </div>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
