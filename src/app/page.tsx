@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <div className="-mt-16">
+      <div className="-mt-32">
         {" "}
-        {/* Negative margin to pull content up */}
+        {/* Increased negative margin to reduce gap */}
         <About />
         <Buy />
         <Contracts />
